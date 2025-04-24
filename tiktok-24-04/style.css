@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    width: 400px;
+    color: white;
+    background-color: brown;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.container button {
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: brown;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.container p {
+    font-size: 20px;
+}
