@@ -9,9 +9,30 @@ body {
     background-color: blanchedalmond;
 }
 
+header {
+    background-color: rgb(226, 60, 60);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+* a:hover {
+    transform: scale(1.5);
+    transition: transform 0.5s;
+}
+
 h1 {
     text-align: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 .container {
@@ -20,7 +41,7 @@ h1 {
     color: white;
     background-color: brown;
     border-radius: 5px;
-    margin: 20px auto;
+    margin: auto;
     padding: 20px;
 }
 
@@ -38,4 +59,19 @@ h1 {
 
 .container p {
     font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: #263138;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-weight: bold;
+}
+
+footer a {
+    color:  rgb(226, 60, 60);
 }
