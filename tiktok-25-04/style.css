@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif;
+    background: #fef3e2;
+    padding: 30px;
+  }
+  
+  .faq {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .toggle {
+    display: none;
+  }
+  
+  .pergunta {
+    display: block;
+    background: #f4a261;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .resposta {
+    background: #fff;
+    padding: 15px;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #f4a261;
+    border-top: none;
+    margin-top: -5px;
+    display: none;
+  }
+  
+  .toggle:checked + .pergunta + .resposta {
+    display: block;
+  }
+  
