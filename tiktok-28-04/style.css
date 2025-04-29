@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ff9a6c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: relative;
+}
+
+header nav a {
+  color: #ffffff;
+  font-weight: 600;
+  padding: 5px; 
+  text-decoration: none;
+}
+
+.fixo {
+  text-align: center;
+  color: purple;
+  padding: 0px;
+  font-size: 40px;
+}
+
+.pergunta-fixa {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 15px;
+  margin-top: 20px;
+}
+
+.menu-toggle {
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-toggle span {
+  height: 4px;
+  width: 100%;
+  background: #fff;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+header nav {
+  position: absolute;
+  top: 48px;
+  right: 10px;
+  background: #ff9a6c;
+  border-radius: 8px;
+  flex-direction: column;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+  width: 150px;
+  display: flex;
+}
+
+header nav a {
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header nav.active {
+  max-height: 500px;
+}
+
+/* Já está me seguindo? */
+
+.container {
+  background: #4682b4;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 300px;
+  margin: 50px auto;
+  
+}
+
+input, button {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background: #87cefa;
+  color: #333;
+  cursor: pointer;
+}
+
+#resultado {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+  
+/* Me siga para não perder conteúdo! */
+
+
+footer {
+  background-color: #263138;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-size: 13px;
+  position: fixed; 
+  bottom: 0; 
+  width: 100%;
+}
+
+footer a {
+  color: #ff9a6c;
+}
