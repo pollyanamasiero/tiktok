@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #ff9a6c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+  }
+  
+  header a {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  /* === Botão hambúrguer / X (usando o seu código) === */
+  .menu-toggle {
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .menu-toggle span {
+    height: 4px;
+    width: 100%;
+    background: #ffffff; /* deixei branco pra combinar com o fundo laranja */
+    border-radius: 2px;
+    transition: 0.4s;
+  }
+  
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+  }
+  
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+  
+  /* === Menu escondido / aparecendo === */
+  header nav {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #ff9a6c;
+    border-radius: 8px;
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease;
+    width: 150px;
+    display: flex;
+  }
+  
+  header nav a {
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  /* Quando o menu está aberto */
+  header nav.active {
+    max-height: 500px;
+  }
+  
