@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List Simples</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Minhas Tarefas</h1>
+    
+    <input type="text" id="novaTarefa" placeholder="Digite uma nova tarefa..." />
+    <button onclick="adicionarTarefa()">Adicionar</button>
+
+    <ul id="listaTarefas">
+      <li>
+        <input type="checkbox" id="tarefa1" />
+        <label for="tarefa1">Estudar HTML</label>
+      </li>
+      <li>
+        <input type="checkbox" id="tarefa2" />
+        <label for="tarefa2">Praticar CSS</label>
+      </li>
+      <li>
+        <input type="checkbox" id="tarefa3" />
+        <label for="tarefa3">Gravar vídeo</label>
+      </li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
