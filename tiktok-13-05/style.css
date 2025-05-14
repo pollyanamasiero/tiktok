@@ -16,6 +16,8 @@
   
   .container {
     background: #ffffff;
+    margin: 50px auto;
+    width: 300px;
     padding: 30px;
     border-radius: 10px;
     text-align: center;
