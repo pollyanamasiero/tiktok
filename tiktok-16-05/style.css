@@ -15,23 +15,28 @@
   
   .container {
     background: #8bd3dd;
-    padding: 40px;
+    padding: 3px;
+    margin: 40px auto;
+    width: 350px;
+    height: 200px;
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   
   h1 {
-    margin-bottom: 20px;
+    font-size: 35px;
+    margin: 15px;
     color: #333;
   }
   
   .relogio {
-    font-size: 48px;
+    font-size: 55px;
     font-weight: bold;
     color: #ffffff;
     background: #2d334a;
-    padding: 20px 40px;
+    padding: 20px;
+    margin: 10px;
     border-radius: 8px;
   }
   
