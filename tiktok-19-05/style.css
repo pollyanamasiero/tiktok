@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background: #fef6e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .progress {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    padding: 10px; /* Adiciona espaço interno */
+  }
+  
+  .progress svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(-90deg);
+    overflow: visible; /* evita o corte */
+  }  
+  
+  .progress circle {
+    fill: none;
+    stroke-width: 15;
+    stroke: #d3d3d3;
+    r: 70;
+    cx: 70;
+    cy: 70;
+  }
+  
+  .progress .bar {
+    stroke: #00bfff;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    transition: stroke-dashoffset 0.3s linear;
+  }
+  
+  .value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #00bfff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #009acd;
+  }
+  
