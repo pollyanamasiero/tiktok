@@ -14,11 +14,11 @@ body {
 }
 
 .container {
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 210px;
     margin: 40px auto;
     background: #8bd3dd;
-    padding: 20px 20px;
+    padding: 15px 20px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
